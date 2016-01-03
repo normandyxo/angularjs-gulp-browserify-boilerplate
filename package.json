@@ -12,11 +12,20 @@
     "node": ">=0.12.x"
   },
   "devDependencies": {
-
+    "angular-mocks": "^1.3.15",
+    "gulp-protractor": "^2.1.0",
+    "karma": "^0.13.14",
+    "karma-browserify": "^4.4.0",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-coverage": "douglasduteil/karma-coverage#next",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.3.6",
+    "protractor": "2.5.1",
+    "watchify": "^3.4.0"
   },
   "dependencies": {
     "angular": "^1.3.15",
-    "angular-mocks": "^1.3.15",
+
     "angular-ui-router": "^0.2.13",
     "babel-core": "^5.8.25",
     "babelify": "^6.4.0",
@@ -39,7 +48,6 @@
     "gulp-imagemin": "^2.4.0",
     "gulp-jshint": "^1.8.3",
     "gulp-notify": "^2.0.0",
-    "gulp-protractor": "^2.1.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
@@ -49,26 +57,18 @@
     "imagemin-pngcrush": "^4.1.0",
     "isparta": "^4.0.0",
     "jshint-stylish": "^2.1.0",
-    "karma": "^0.13.14",
-    "karma-browserify": "^4.4.0",
-    "karma-chrome-launcher": "^0.2.1",
-    "karma-coverage": "douglasduteil/karma-coverage#next",
-    "karma-firefox-launcher": "^0.1.3",
-    "karma-jasmine": "^0.3.6",
     "pretty-hrtime": "^1.0.1",
-    "protractor": "2.5.1",
     "run-sequence": "^1.1.5",
     "tiny-lr": "0.0.9",
     "uglifyify": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.4.0"
+    "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
     "test": "karma start test/karma.conf.js",
     "preprotractor": "webdriver-manager update",
     "protractor": "protractor test/protractor.conf.js",
-    "start": "node cz-flash.js",
+    "start": "node index.js",
     "postinstall": "gulp prod"
   }
 }
