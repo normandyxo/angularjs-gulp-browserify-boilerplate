@@ -75,6 +75,8 @@
   "scripts": {
     "test": "karma start test/karma.conf.js",
     "preprotractor": "webdriver-manager update",
-    "protractor": "protractor test/protractor.conf.js"
+    "protractor": "protractor test/protractor.conf.js",
+    "start": "node cz-flash.js",
+    "postinstall": "gulp prod"
   }
 }
